@@ -13,6 +13,40 @@ void menu()
 
 void game()
 {
+	char board[ROW][COL] = {0};
+	initBoard(board,ROW,COL);
+	DisplayBoard(board, ROW, COL);
+	char ret = 0;
+	while (1)
+	{
+		playermove(board,ROW,COL);
+		DisplayBoard(board, ROW, COL);
+		char ret = is_win(board, ROW, COL);
+		if (ret !='c')
+		{
+			break;
+		}
+		computergame(board,ROW,COL);
+		DisplayBoard(board, ROW, COL);
+		ret = is_win(board, ROW, COL);
+		if (ret != 'c')
+		{
+			break;
+		}	
+	}
+	if (ret == '*')
+	{
+		printf("玩家赢\n");
+	}
+	else if (ret == '#')
+	{
+		printf(" 电脑赢\n");
+	}
+	else
+	{
+		printf("继续\n");
+	}
+
 
 }
 
@@ -23,6 +57,7 @@ void game()
 void test()
 {
 	int input = 0;
+	srand((unsigned int ) time(NULL));
 	do
 	{
 		menu();
@@ -31,9 +66,8 @@ void test()
 		switch (input)
 		{
 		case 1:
-				game();
-				
-				break;
+			game();
+			break;
 		case 0:
 			printf("退出游戏\n");
 			break;
@@ -50,6 +84,7 @@ void test()
 int main()
 
 {
+	
 	test();
 	return 0;
 
