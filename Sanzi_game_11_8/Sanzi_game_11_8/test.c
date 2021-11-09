@@ -21,20 +21,50 @@ void game()
 	{
 		playermove(board,ROW,COL);
 		DisplayBoard(board, ROW, COL);
-		char ret = is_win(board, ROW, COL);
-		if (ret !='c')
-		{
-			break;
-		}
+		 ret = is_win(board, ROW, COL);
+		 if (ret == '*')
+		 {
+			 printf("玩家赢\n");
+			 break;
+		 }
+		 else if (ret == '#')
+		 {
+			 printf(" 电脑赢\n");
+			 break;
+		 }
+		 else if (ret == 'Q')
+		 {
+			 printf("平局");
+			 break;
+		 }
+		 else
+		 {
+			 printf("继续\n");
+		 }
 		computergame(board,ROW,COL);
 		DisplayBoard(board, ROW, COL);
 		ret = is_win(board, ROW, COL);
-		if (ret != 'c')
+		if (ret == '*')
 		{
+			printf("玩家赢\n");
 			break;
-		}	
+		}
+		else if (ret == '#')
+		{
+			printf(" 电脑赢\n");
+			break;
+		}
+		else if (ret == 'Q')
+		{
+			printf("平局");
+			break;
+		}
+		else
+		{
+			printf("继续\n");
+		}
 	}
-	if (ret == '*')
+	/*if (ret == '*')
 	{
 		printf("玩家赢\n");
 	}
@@ -45,7 +75,7 @@ void game()
 	else
 	{
 		printf("继续\n");
-	}
+	}*/
 
 
 }
