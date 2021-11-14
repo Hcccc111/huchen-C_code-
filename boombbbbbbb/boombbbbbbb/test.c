@@ -20,9 +20,9 @@ void game()
 	Setmine(mine, ROW, COL);
 	//¥Ú”°∆Â≈Ã
 
-	/*DisplayBoard(show, ROW, COL);*/
+	DisplayBoard(show, ROW, COL);
 
-	DisplayBoard(mine, ROW, COL);
+	/*DisplayBoard(mine, ROW, COL);*/
 	//≈≈¿◊
 	FindMine(mine, show, ROW, COL);
 	
