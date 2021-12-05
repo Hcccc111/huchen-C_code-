@@ -1,0 +1,11 @@
+﻿  12_5.c
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(45,14): error C2057: 应输入常量表达式
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(45,14): error C2466: 不能分配常量大小为 0 的数组
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(45,17): error C2057: 应输入常量表达式
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(45,17): error C2466: 不能分配常量大小为 0 的数组
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(45,17): error C2087: “arr”: 缺少下标
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(45,18): error C2133: “arr”: 未知的大小
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(56,37): warning C4047: “=”:“int”与“char [3]”的间接级别不同
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(60,37): warning C4047: “=”:“int”与“char [3]”的间接级别不同
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(64,36): warning C4047: “=”:“int”与“char [2]”的间接级别不同
+C:\Users\Administrator\source\repos\huchen-C_code-\12_5\12_5\12_5.c(46,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

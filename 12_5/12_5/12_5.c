@@ -11,30 +11,62 @@
 //
 //输出描述：
 //输出为一行，删除指定数字之后的序列。
+//int main()
+//{
+//    int a = 0;
+//    scanf("%d", &a);
+//    int i = 0;
+//    int arr[50] = { 0 };
+//    for (i = 0; i < a; i++)
+//    {
+//        scanf("%d ", &arr[i]);
+//
+//    }
+//    int del = 0;
+//    scanf("%d", &del);
+//    int j = 0;
+//    for (i = 0; i < a; i++)
+//    {
+//        if (arr[i] != del)
+//        {
+//            arr[j++] = arr[i];
+//        }
+//    }
+//    for (i = 0; i < j; i++)
+//    {
+//        printf("%d ", arr[i]);
+//    }
+//    return 0;
+//}
+#include<stdio.h>
 int main()
 {
-    int a = 0;
-    scanf("%d", &a);
-    int i = 0;
-    int arr[50] = { 0 };
-    for (i = 0; i < a; i++)
+    int n, m = 0;
+    int arr[n][m];
+    scanf("%d", &n);
+    for (m = 0; m <= n; m++)
     {
-        scanf("%d ", &arr[i]);
-
-    }
-    int del = 0;
-    scanf("%d", &del);
-    int j = 0;
-    for (i = 0; i < a; i++)
-    {
-        if (arr[i] != del)
+        int a, b = 0;
+        for (a = 0; a <= n; a++)
         {
-            arr[j++] = arr[i];
+            for (b = 0; b <= m; b++)
+            {
+                while (a == b)
+                {
+                    arr[a][b] = "* ";
+                }
+                while (a == 0)
+                {
+                    arr[a][b] = "* ";
+                }
+                if (a != b && a != 0)
+                {
+                    arr[a][b] = " ";
+                }
+            }
+            printf("\n");
         }
-    }
-    for (i = 0; i < j; i++)
-    {
-        printf("%d ", arr[i]);
+        printf("%d", arr[a][b]);
     }
     return 0;
 }
