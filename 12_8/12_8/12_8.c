@@ -28,7 +28,7 @@ int main()
             }
             else
             {
-                printf("x1=x2=%.2f\n", (-b) / (2 * a));
+                printf("x1=x2=%.2f\n", (-b+sqrt(disc)) / (2 * a));
             }
         }
         else
