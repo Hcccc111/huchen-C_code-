@@ -1,0 +1,3 @@
+﻿  1_17.c
+C:\Users\Administrator\source\repos\huchen-C_code-\1_17\1_17\1_17.c(40,16): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“double”
+  1_17.vcxproj -> C:\Users\Administrator\source\repos\huchen-C_code-\1_17\Debug\1_17.exe
